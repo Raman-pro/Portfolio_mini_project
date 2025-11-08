@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    background-color: #000;
+    font-family: sans-serif;
+    color: #fff;
+}
+header{
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+ul a h3{
+    margin: 0;
+}
+ul a{
+    margin: 20px;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+li a:hover {
+  color: #bbb;
+}
+.container h3{
+    position: relative;
+    top: 50px;
+
+    font-size: 50px;
+    text-align: center;
+}
+.container h1{
+    text-align: center;
+    font-family: "Meow Script";
+    font-size: 200px;
+}
+
+.profile-container img{
+    float: right;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url("profile.png");
+
+}
+#about{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 100px 300px;
+    line-height: 2.2;
+    height: 80vh;
+
+}
+
+#about img{
+    padding: 50px;
+}
+#projects{
+    padding: 100px 300px;
+
+        height: 80vh;
+
+}
+#projects h1{
+    text-align: center;
+
+}
+#skills {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 100px 300px;
+    line-height: 2.2;
+    height: 80vh;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-category {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 200px;
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-list li {
+    font-size: 16px;
+    color: #bbb;
+    transition: color 0.2s;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#projects a {
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#projects a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+nav a {
+    background-color: transparent !important;
+    padding: 8px 16px;
+}
