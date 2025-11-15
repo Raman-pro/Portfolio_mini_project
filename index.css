@@ -3,9 +3,13 @@ body{
     background-color: #000;
     font-family: sans-serif;
     color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 header{
-    height: 100vh;
+    height: 70vh;
+    width: 100%;
+    max-width: 100%;
 }
 
 ul {
@@ -13,18 +17,22 @@ ul {
     list-style: none;
     margin: 0;
     overflow: hidden;
-    padding: 0;
+    padding: 0 2%;
+    width: 100%;
+    box-sizing: border-box;
 }
 ul a h3{
     margin: 0;
+    font-size: 1.5rem;
 }
 ul a{
-    margin: 20px;
+    margin: 1.25rem;
+    font-size: 1rem;
 }
 li a {
   display: block;
   color: white;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -36,68 +44,90 @@ li a:hover {
     position: relative;
     top: 50px;
 
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
 }
 .container h1{
     text-align: center;
     font-family: "Meow Script";
-    font-size: 200px;
+    font-size: clamp(3rem, 12vw, 10rem);
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.2;
 }
 
 .profile-container img{
     float: right;
-    width: 300px;
+    width: clamp(150px, 25%, 350px);
+    max-width: 90%;
     border-radius: 50%;
     background-image: url("profile.png");
-
+    margin-right: 2%;
 }
 #about{
     background-color: #fff;
     color: black;
     text-align: center;
-    padding: 100px 300px;
+    padding: 5rem 8%;
     line-height: 2.2;
-    height: 80vh;
-
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 #about img{
-    padding: 50px;
+    padding: 3rem;
+    height: auto;
+    max-width: 60px;
 }
 #projects{
-    padding: 100px 300px;
-
-        height: 80vh;
-
+    padding: 5rem 8%;
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 #projects h1{
     text-align: center;
-
+    font-size: 2.5rem;
 }
 #skills {
     background-color: #fff;
     color: black;
     text-align: center;
-    padding: 100px 300px;
+    padding: 5rem 8%;
     line-height: 2.2;
-    height: 80vh;
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .skill-category {
     background-color: #000;
     color: #fff;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 2rem;
+    border-radius: 1rem;
     min-width: 200px;
+    max-width: 300px;
+    width: 20%;
+    min-width: clamp(180px, 20%, 300px);
     transition: transform 0.3s;
 }
 
@@ -106,8 +136,9 @@ li a:hover {
 }
 
 .skill-category h3 {
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
     color: #fff;
+    font-size: 1.25rem;
 }
 
 .skill-list {
@@ -116,11 +147,11 @@ li a:hover {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .skill-list li {
-    font-size: 16px;
+    font-size: 1rem;
     color: #bbb;
     transition: color 0.2s;
 }
@@ -129,13 +160,15 @@ a {
     color: #007bff;
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
 }
 
 #projects a {
     color: #007bff;
     background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
 }
 
 #projects a:hover {
@@ -143,8 +176,54 @@ a {
     color: #fff;
 }
 
+#about h1 {
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1rem;
+    max-width: 900px;
+    margin: 1rem auto;
+}
+
+#projects h3 {
+    font-size: 1.75rem;
+}
+
+#projects p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    max-width: 35%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    min-height: 40vh;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    margin-top: 7rem;
+}
+
+footer a {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
 
 nav a {
     background-color: transparent !important;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
